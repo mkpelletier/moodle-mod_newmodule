@@ -85,7 +85,7 @@ class restore_@@newmodule@@_activity_structure_step extends restore_activity_str
     }
 
 	
-	protected function process_@@newmodule@@_attempts($data) {
+	protected function process_@@newmodule@@_attempt($data) {
         global $DB;
 
         $data = (object)$data;
@@ -100,7 +100,7 @@ class restore_@@newmodule@@_activity_structure_step extends restore_activity_str
 		// Mapping without files
 		//here we set the table name as the "key" to the mapping, but its actually arbitrary
 		//'we would need to use the "key" later when calling add_related_files for the itemid in the moodle files area
-		//IF we had files for this set of data. Actually attempts won't hvwhowever)
+		//If we had files for this set of data.)
        $this->set_mapping(MOD_NEWMODULE_USERTABLE, $oldid, $newitemid, false); 
     }
 	
